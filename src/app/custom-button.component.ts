@@ -23,5 +23,7 @@ export class CustomButtonComponent {
 
   handlerClick() {
     this.customClick.emit();
+
+    this.customClickSignal.update((state) => state + 1);
   }
 }
