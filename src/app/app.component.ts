@@ -9,12 +9,12 @@ import { CustomButtonComponent } from "./custom-button.component";
 export class AppComponent implements OnInit {
   title = "fun-with-signals";
 
-  @ViewChild("customButton", { static: true })
-  customButton!: CustomButtonComponent;
+  /**@ViewChild("customButton", { static: true })
+  customButton!: CustomButtonComponent;**/
 
   ngOnInit(): void {
     effect(() => {
-      console.log("customClickSignal", this.customButton.customClickSignal());
+      //console.log("customClickSignal", this.customButton.customClickSignal());
     });
   }
 }
